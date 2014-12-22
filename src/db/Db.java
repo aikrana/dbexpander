@@ -32,13 +32,8 @@ public class Db {
         String baseUrl;
         boolean acceptNextAlert = true;
         StringBuffer verificationErrors = new StringBuffer();
-//        FirefoxProfile profile = new FirefoxProfile();      
-//        profile.setPreference("browser.link.open_newwindow.restriction", 1);
-//        driver = new org.openqa.selenium.firefox.FirefoxDriver(profile);
         driver = new FirefoxDriver();
 //        driver = new HtmlUnitDriver();
-//        driver.manage().window().minimize();
-        driver.manage().window().setPosition(new Point(-2000, 0));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         baseUrl = "https://www.dropbox.com";
      
